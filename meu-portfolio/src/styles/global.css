@@ -1,0 +1,82 @@
+/* src/styles/global.css */
+
+/* Reset e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonte padrão */
+  html {
+    font-family: 'Inter', sans-serif; /* Sinta-se livre para escolher outra, ex.: 'Roboto' */
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  
+  /* Cores e Layout */
+  body {
+    background-color: #151515; /* Fundo escuro */
+    color: #f0f0f0;            /* Texto claro */
+    line-height: 1.6;
+  }
+  
+  /* Links */
+  a {
+    color: #c6a258; /* tom de dourado/marrom para destaque, por exemplo */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #e2b86b;
+  }
+  
+  /* Container para limitar larguras */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Títulos */
+  h1, h2, h3, h4, h5 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  /* Seções com espaçamento */
+  section {
+    padding: 4rem 0;
+    scroll-margin-top: 80px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  section:last-of-type {
+    border-bottom: none;
+  }
+  
+  /* Botão de exemplo */
+  button, .btn {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    background-color: #c6a258;
+    color: #151515;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  button:hover, .btn:hover {
+    background-color: #e2b86b;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+    section {
+      padding: 2rem 0;
+    }
+  }
+  
+ 
